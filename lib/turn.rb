@@ -34,7 +34,7 @@ def turn(board)
   if(valid_move(board, index))
     move(board, index, "X")
   else
-    puts 
+    puts "Not a valid space, please try again:"
     turn(board)
 end
 
