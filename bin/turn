@@ -5,6 +5,7 @@ board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
 #show board
 display_board(board) 
+turn(board) 
 #ask for input
 #get input
 #convert input to index
