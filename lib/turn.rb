@@ -30,8 +30,6 @@ end
 def move(board, index, token="X")
   if(valid_move?(board, index))
     board[index] == token
-  else
-    return false 
   end
 end
 
@@ -40,7 +38,7 @@ def turn(board)
   str = gets.strip
   index = input_to_index(str)
   if(valid_move?(board, index))
-    move(board, index, "X")
+    move(board, index, token)
   else
     puts "Not a valid space, please try again:"
     turn(board)
