@@ -8,7 +8,7 @@ end
 
 def input_to_index(str)
   int = str.to_i 
-  return int 
+  return int - 1 
 end
 
 def valid_move?(board, index)
