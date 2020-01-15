@@ -12,7 +12,7 @@ def input_to_index(str)
 end
 
 def valid_move?(board, index)
-  if(board[index] == "" || board[index] == " " || board[index] == nil)
+  if(board[index] == "" || board[index] == " " || board[index] == nil) && index.between?(0, 8)
     return true 
   else
     return false 
@@ -30,6 +30,11 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   str = gets.strip
-  
+  index = input_to_index(str)
+  if(valid_move(board, index))
+    move(board, index, "X")
+  else
+    puts 
+    turn(board)
 end
 
