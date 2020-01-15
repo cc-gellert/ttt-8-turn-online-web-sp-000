@@ -7,8 +7,8 @@ def display_board(board)
 end
 
 def input_to_index(str)
-  int = (str.to_i) + 1 
-  return int
+  int = str.to_i 
+  return int + 1 
 end
 
 def valid_move?(board, index)
