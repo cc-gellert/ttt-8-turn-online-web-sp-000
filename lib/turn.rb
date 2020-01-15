@@ -31,7 +31,7 @@ def turn(board)
   puts "Please enter 1-9:"
   str = gets.strip
   index = input_to_index(str)
-  if(valid_move(board, index))
+  if(valid_move?(board, index))
     move(board, index, "X")
   else
     puts "Not a valid space, please try again:"
