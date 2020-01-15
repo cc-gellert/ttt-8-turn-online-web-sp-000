@@ -1,15 +1,7 @@
 #!/usr/bin/env ruby
-require_relative '../lib/turn' 
-
-board = [" ", " ", " ", " ", " ", " ", " ", " ", " "] 
+require_relative '../lib/turn'
+ 
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 puts "Welcome to Tic Tac Toe!"
-#show board
 display_board(board) 
 turn(board) 
-
-#ask for input
-#get input
-#convert input to index
-#check if index is open
-#if valid make the move to index, show board
-#else ask for input again until input is valid 
