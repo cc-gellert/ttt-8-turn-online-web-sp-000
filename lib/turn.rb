@@ -40,7 +40,7 @@ def turn(board)
   str = gets.strip
   index = input_to_index(str)
   if(valid_move?(board, index))
-    move(board, index, "X")
+    move(board, index, token="X")
   else
     puts "Not a valid space, please try again:"
     turn(board)
