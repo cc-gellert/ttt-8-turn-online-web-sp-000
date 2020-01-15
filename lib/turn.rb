@@ -7,7 +7,9 @@ def display_board(board)
 end
 
 def input_to_index(str)
-  str.toInt
+  int = str.to_i + 1 
+  return int
+end
 
 def valid_move?(board, index)
   if(board[index] == "" || board[index] == " " || board[index] == null)
