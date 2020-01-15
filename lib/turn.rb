@@ -36,5 +36,6 @@ def turn(board)
   else
     puts "Not a valid space, please try again:"
     turn(board)
+  end
 end
 
