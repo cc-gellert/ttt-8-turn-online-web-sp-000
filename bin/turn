@@ -1,1 +1,8 @@
 #!/usr/bin/env ruby
+#show board
+#ask for input
+#get input
+#convert input to index
+#check is index is open
+#if valid make the move to index, show board
+#else ask for input again until input is valid 
