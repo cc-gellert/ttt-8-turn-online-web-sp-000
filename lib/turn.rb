@@ -41,7 +41,6 @@ def turn(board)
   index = input_to_index(str)
   if(valid_move?(board, index))
     move(board, index, "X")
-    display_board(board)
   else
     puts "Not a valid space, please try again:"
     turn(board)
